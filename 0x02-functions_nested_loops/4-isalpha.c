@@ -1,19 +1,13 @@
 #include "main.h"
 
 /**
- * print_alphabet - print alphabet of letters
- *
- * Return: void
+ * _isalpha - check for lower case letter
+ * @c : character to check
+ * Return:0 or 1
  */
 
-void print_alphabet(void)
+int _isalpha(int c)
 {
-	int i;
+	return ((c >= 97 && c <= 122) || (c >= 65 && c <= 90));
 
-	for (i = 'a'; i <= 'z'; i++)
-
-	{
-		_putchar(i);
-	}
-	_putchar('\n');
 }
